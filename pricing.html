@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Matcha - Pricing</title>
+    <!-- Agregamos la nueva página de estilos -->
+    <link rel="stylesheet" type="text/css" href="./pricing.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="/" class="logo">
+            <img src="data:image/png;base64,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" alt="Matcha" />
+          </a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              
+            </ul>
+    
+            <div class="actions">
+                <a href="/">Sign in</a>
+                <button>Start free trial</button>
+              </div>
+          </div>
+        </div>
+      </nav>
+      <main class="header">
+        <article>
+        <h1 class="title"> Free during COVID-19 </h1>
+        <p>
+            Matcha is on a mission to make your blog the biggest asset for your business growth, especially in today context.
+            Thats why we are making the Matcha Platform free forever to all new users who sign up during COVID-19.
+        </p>
+        </article>
+
+        <div class="platforms">
+            <h5>MY BLOG IS POWERED BY</h5>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary">
+                <img src="./icons/shopify.svg" alt="Shopify icon"> <!-- Este es el ícono de Shopify-->
+                Shopify
+              </button>
+              <button type="button" class="btn btn-secondary">
+                <img src="./icons/wordpress.svg" alt="Wordpress icon"> <!-- Este es el ícono de Wordpress-->
+                Wordpress
+              </button>
+              <button type="button" class="btn btn-secondary">Other</button>
+            </div>
+          </div>
+
+      </main>
+    <!-- Aquí agregaremos el nuevo contenido -->
+
+    <section class="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      How can I get started?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Getting started is easy! Simply
+                      <a href="#">create a free account</a> to start using the Platform and
+                      exploring the library. Want to start publishing? When you click the
+                      "Publish" button on a piece of licensed content, you'll be prompted to
+                      input your credit card information before continuing. Questions?
+                      <a href="#">Reach out to our customer support team for assistance!</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                      What is licensed content?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Licensed content, sometimes called syndicated content, is content
+                      produced by a professional publisher that can be legally licensed for
+                      use on your own website with no SEO penalty.
+                      <a href="#">Learn more</a>. The Matcha library leverages licensed
+                      content to provide you with a low-cost supply of professionally
+                      written articles that are proven to be engaging. It eliminates the
+                      headache and time of producing your own blog articles, allowing you to
+                      get back to more pressing matters. When we say, "professional
+                      publishers", we mean it. Currently, our library includes articles from
+                      the following publishers: Oxygen Magazine, Better Nutrition, Popular
+                      Science, Field & Stream, Coach, RootsRated, Business2Community,
+                      MoneyNing, YourMoneyGeek Working Mother, Clean Eating, and Healthy
+                      Moms Magazine.
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                      What is the Matcha content library?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Matcha offers a library of more than 10,000 articles with photography
+                      and written by high-quality third-party publishers. You can publish an
+                      article from the library to your blog in a matter of minutes. In 2018
+                      alone, our articles garnered 8.9 million website visits for our
+                      customers. The data shows that readers find the articles engaging and
+                      perform as well or better than custom articles. You can see the study
+                      <a href="#">here</a>. Every week, we are bringing in hundreds of new
+                      articles to our library. Our library publishers include: Oxygen
+                      Magazine, Better Nutrition, Popular Science, Field & Stream, Coach,
+                      RootsRated, Business2Community, MoneyNing, YourMoneyGeek Working
+                      Mother, Clean Eating, and Healthy Moms Magazine.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <!-- Aqui insertaremos el contenido de la segunda columna -->
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

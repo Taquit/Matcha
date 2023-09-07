@@ -1,0 +1,51 @@
+//nav >div > a{
+
+//
+// ejemplo 1  X
+// nav {
+
+//     div{
+
+//         p {
+//             font-family: 'Courier New', Courier, monospace;
+
+//             b{
+//                 font-weight: 500;
+//             }
+//         }
+
+//         a {
+//             display: "flex";
+
+//             img {
+//                width: 100%;
+//             }
+//         }
+
+//         div{
+
+//             article{
+//                      width: 100%;
+//                 h2{
+//                     font-size: 30px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// Ejemplo 2 buena 
+nav{
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+}

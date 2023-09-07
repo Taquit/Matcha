@@ -110,6 +110,7 @@ main {
 .promo>h2>video>article>p {
   display: flex;
   flex-direction: column;
+  
 }
 
 .promo {
@@ -117,6 +118,7 @@ main {
   width: 70%;
   margin: 100px auto;
   align-items: center;
+
 }
 
 .promo h2 {
@@ -128,8 +130,10 @@ main {
 .publish {
   flex-direction: column;
   margin-left: 45px;
+ 
 
 }
+
 
 .publish p {
   text-align: left;
@@ -191,20 +195,128 @@ main {
   width: 100px;
 }
 
+.carousel-general{
+  background-color: #a1d683;
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+
+}
+
+.growing{
+  flex-direction: column;
+  padding-right: 120px;
+  flex: 2;
+
+}
+
+.growing > h2{
+  font-family: "Alegreya", serif;
+  font-size: 62px;
+  line-height: 61px;
+  color: #025157;
+  font-weight: 400;
+}
+
+.growing > p {
+  color: #343434; 
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 500;
+
+}
+.growing button{
+  border-radius: 10px;
+}
+
+.carousel{
+  background-color: #fff;
+  width: 350px;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  margin: 20px;
+
+}
+
+.carousel h3{
+  color: #025157;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.carousel h4{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.carousel figure button{
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+}
+.carousel figure{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.carousel p{
+  color: #8b8b8bcc;
+  
+}
+.results  img{
+  width: 5000px;
+  margin-right: 20px;
+  vertical-align: middle;
+  border-style: none;
+}
 
 
-@media (max-width: 500px) {
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
 
 
   .main {
     margin-top: 80px;
     margin-right: 10px;
     margin-left: 10px;
+    align-items: center;
   }
-
-
-
   h1 {
     font-size: 24px;
   }
+
+  .navbar,
+  .actions {
+    display: none;
+  }
+  .promo{
+    display: inline;
+  }
+
+  .features{
+    grid-template: repeat(4,1fr) / 1fr;
+    width: 200%;
+    background-color: #025157;
+  }
+  
+  .features, .card{
+    
+    
+  }
+
+  
 }
