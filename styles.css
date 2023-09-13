@@ -288,12 +288,19 @@ main {
 
 @media (max-width: 425px) {
 
-
+  body{
+    width: 425px;
+  }
   .main {
     margin-top: 80px;
     margin-right: 10px;
     margin-left: 10px;
     align-items: center;
+  }
+  .video, video{
+    width: 300px;
+    margin-left: 10%;
+    
   }
   h1 {
     font-size: 24px;
@@ -305,17 +312,39 @@ main {
   }
   .promo{
     display: inline;
+    
   }
-
   .features{
-    grid-template: repeat(4,1fr) / 1fr;
+    grid-template-columns: 2fr;
+    margin-top: 30px;
+  }
+  .features > .card{
+    width: 100%;
+    height: fit-content;
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+  /* .features{
+    grid-template-columns: 2fr;
     width: 200%;
     background-color: #025157;
-  }
+
+  } */
   
-  .features, .card{
-    
-    
+  
+
+  .carousel-general{
+    display: block;
+    margin: 0%;
+    padding-left: 0%;
+  }
+
+  .carousel-general >.growing{
+    margin-left: 20px;
+  }
+
+ .carousel{
+   padding-right: 0px; 
   }
 
   
